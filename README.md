@@ -19,7 +19,15 @@ Unlike standard projects, these models were built using pure matrix mathematics:
 *   **Feature Engineering:** Focused on 7 key audio dimensions: Danceability, Energy, Valence, Tempo, Loudness, Acousticness, and Instrumentalness[cite: 1].
 *   **Normalization:** Applied Z-score standardization to ensure numerical stability and consistent feature scaling[cite: 1].
 *   **Training Strategy:** Implemented an 80/20 train-test split with iterative convergence monitoring ($n\_iter$ up to 1000)[cite: 1].
+  
+## 📊 Business Intelligence Dashboard (Power BI)
+To complement the machine learning models, I developed an interactive Power BI dashboard to explore the underlying trends of the Spotify dataset.
 
+*   **Feature Correlation:** Heatmaps showing the relationship between "Energy" and "Loudness."
+*   **Popularity Distribution:** Analysis of the $P \ge 50$ threshold across different genres and tempos.
+*   **Acoustic Profiles:** Visualizing the "sweet spot" of danceability and valence for hit records.
+*   **Model Performance:** A visual comparison of Accuracy and RMSE across the Perceptron, Logistic Regression, and Neural Network models.
+  
 ## 📈 Results & Benchmarks
 The performance was evaluated using Accuracy and **RMSE** to assess probability calibration[cite: 1].
 
