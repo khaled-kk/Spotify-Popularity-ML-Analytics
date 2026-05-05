@@ -1,52 +1,51 @@
-# 🎵 Spotify Popularity: Machine Learning from Scratch
+# 🎵 Spotify Popularity: Neural Engineering & Business Intelligence
 
-[![Tech: Python/NumPy](https://img.shields.io/badge/Tech-NumPy--Only-blue.svg)]()
-[![Field: Data Science](https://img.shields.io/badge/Academic-Ms.--Data--Science-red.svg)]()
-[![Status: Research-Complete](https://img.shields.io/badge/Status-Complete-success.svg)]()
+[![Tech: NumPy-Scratch](https://img.shields.io/badge/Tech-NumPy--Scratch-blue.svg)]()
+[![BI: Power-BI](https://img.shields.io/badge/BI-Power--BI-yellow.svg)]()
+[![Academic: Ms. Data Science](https://img.shields.io/badge/Academic-Ms.--Data--Science-red.svg)]()
 
-**Spotify Popularity ML** is an in-depth exploration of binary classification algorithms implemented entirely from scratch using Python and NumPy. This project bypasses high-level ML libraries to demonstrate the mathematical mechanics behind how models learn, optimize, and generalize.
+**Spotify Popularity Analytics** is a dual-phase project that bridges the gap between low-level algorithm engineering and high-level executive storytelling. Developed as part of the **Ms. Data Science** program at the **University of Europe for Applied Sciences**, this repository features a binary classification system built from scratch and an interactive Power BI dashboard for strategic trend analysis[cite: 1].
 
-## 📊 Project Objective
-The goal is to predict song popularity (defined as a score $\ge 50$) based on acoustic features. By manually coding the backpropagation and gradient descent logic, this project serves as a technical benchmark for foundational ML principles.
+## 🧠 Phase 1: Machine Learning from Scratch
+To demonstrate a deep understanding of mathematical optimization, three core models were implemented using **pure NumPy**, avoiding high-level libraries like scikit-learn for the model logic[cite: 1].
 
-## 🛠️ Implemented Models
-Unlike standard projects, these models were built using pure matrix mathematics:
-*   **Perceptron:** A classic linear binary classifier using the perceptron learning rule.
-*   **Logistic Regression:** Optimized via Gradient Descent using Sigmoid activation and Binary Cross-Entropy loss[cite: 1].
-*   **Neural Network:** A multi-layer architecture featuring **ReLU** activation in the hidden layer and **Backpropagation** for weight updates[cite: 1].
+*   **Custom Perceptron:** Implemented with a binary threshold activation and a manual learning rule to establish a baseline[cite: 1].
+*   **Logistic Regression:** Built using Sigmoid activation and Binary Cross-Entropy loss, optimized via Gradient Descent[cite: 1].
+*   **Neural Network:** A 3-layer architecture featuring **ReLU** in the hidden layer and **Sigmoid** for the output, trained through manual **Backpropagation**[cite: 1].
 
-## 🧪 Methodology & Preprocessing
-*   **Feature Engineering:** Focused on 7 key audio dimensions: Danceability, Energy, Valence, Tempo, Loudness, Acousticness, and Instrumentalness[cite: 1].
-*   **Normalization:** Applied Z-score standardization to ensure numerical stability and consistent feature scaling[cite: 1].
-*   **Training Strategy:** Implemented an 80/20 train-test split with iterative convergence monitoring ($n\_iter$ up to 1000)[cite: 1].
-  
-## 📊 Business Intelligence Dashboard (Power BI)
-To complement the machine learning models, I developed an interactive Power BI dashboard to explore the underlying trends of the Spotify dataset.
+### Performance Summary
+The goal was to predict if a song's popularity score is $\ge 50$ based on audio features[cite: 1].
 
-*   **Feature Correlation:** Heatmaps showing the relationship between "Energy" and "Loudness."
-*   **Popularity Distribution:** Analysis of the $P \ge 50$ threshold across different genres and tempos.
-*   **Acoustic Profiles:** Visualizing the "sweet spot" of danceability and valence for hit records.
-*   **Model Performance:** A visual comparison of Accuracy and RMSE across the Perceptron, Logistic Regression, and Neural Network models.
-  
-## 📈 Results & Benchmarks
-The performance was evaluated using Accuracy and **RMSE** to assess probability calibration[cite: 1].
+| Algorithm | Accuracy (~1k iter) | RMSE | Technical Logic |
+| :--- | :--- | :--- | :--- |
+| **Perceptron** | 73.8% | Higher | Linear Threshold[cite: 1] |
+| **Logistic Regression** | 74.6% | Lower | Probabilistic Gradient Descent[cite: 1] |
+| **Neural Network** | 74.6% | Lower | Non-Linear Backpropagation[cite: 1] |
 
-| Model | Accuracy (~1k iter) | RMSE |
-| :--- | :--- | :--- |
-| **Perceptron** | 73.8% | Higher |
-| **Logistic Regression** | 74.6% | Lower |
-| **Neural Network** | 74.6% | Lower |
+---
 
-> **Key Insight:** While the Neural Network and Logistic Regression plateaued at similar accuracy, the lower RMSE in these models indicates superior confidence and probability calibration compared to the basic Perceptron[cite: 1].
+## 📊 Phase 2: Power BI Executive Dashboard
+To translate these findings for a non-technical audience, I developed an interactive dashboard focusing on clarity, visual hierarchy, and actionable insights.
 
-## 🚀 Getting Started
-1. **Clone the repo:**
-   ```bash
-   git clone [https://github.com/khaled-kk/Spotify-Popularity-ML-Scratch.git](https://github.com/khaled-kk/Spotify-Popularity-ML-Scratch.git)
+### 📌 Interactive Components
+*   **Danceability vs. Popularity:** Scatter plots identifying the "rhythm-to-success" relationship.
+*   **Genre Benchmarking:** Comparison of average popularity across the top 10 genres.
+*   **Explicit Content Distribution:** Analysis of how explicit vs. non-explicit tracks impact listener engagement.
+*   **KPI Tracking:** Real-time visibility into Total Tracks (114,000+), Average Popularity, and Danceability.
 
-2. **Review the Report:** See Assignment_Report.pdf for the full mathematical breakdown and professor guidance[cite: 1].
+---
 
-3. **Run the Code:** Open the Jupyter notebook to see the NumPy-based implementations.
+## 🛠️ Technical Methodology
+1.  **Data Preparation**: Sourced from Kaggle; tracks were labeled as "popular" (1) or "not popular" (0) based on a threshold of 50[cite: 1].
+2.  **Feature Engineering**: Standardized 7 key audio dimensions (Danceability, Energy, Valence, Tempo, Loudness, Acousticness, and Instrumentalness) using Z-score normalization[cite: 1].
+3.  **Algorithmic Training**: Validated convergence behavior by varying training iterations ($n\_iter$) up to 1000[cite: 1].
+4.  **Tools Used**: Python (NumPy, pandas) for core logic[cite: 1] and Power BI (DAX) for visual analytics.
+
+## 📂 Project Files
+*   `predicting_song_popularity.py`: Full Python source code for the NumPy-based models.
+*   `Machine_Learning_Assignment1.pdf`: Detailed technical report on formulations, methodology, and results[cite: 1].
+*   `Spotify_Insights_Dashboard.pbix`: Interactive Power BI dashboard.
+*   `Spotify_dataset.csv`: Raw data containing 114k+ Spotify records[cite: 1].
 
 ---
 *Developed by Khaled Walid under the guidance of Professor Nor Azizah Hitam.*
