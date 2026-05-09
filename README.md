@@ -4,7 +4,7 @@
 [![BI: Power-BI](https://img.shields.io/badge/BI-Power--BI-yellow.svg)]()
 [![Academic: Ms. Data Science](https://img.shields.io/badge/Academic-Ms.--Data--Science-red.svg)]()
 
-**Spotify Popularity Analytics** is a dual-phase project that bridges the gap between low-level algorithm engineering and high-level executive storytelling. Developed as part of the **Ms. Data Science** program at the **University of Europe for Applied Sciences**, this repository features a binary classification system built from scratch and an interactive Power BI dashboard for strategic trend analysis[cite: 1].
+**Spotify Popularity Analytics** is a dual-phase project that bridges the gap between low-level algorithm engineering and high-level executive storytelling. Developed as part of the **MSc Data Science** program at the **University of Europe for Applied Sciences**, this repository features a binary classification system built from scratch and an interactive Power BI dashboard for strategic trend analysis[cite: 1].
 
 ## 🧠 Phase 1: Machine Learning from Scratch
 To demonstrate a deep understanding of mathematical optimization, three core models were implemented using **pure NumPy**, avoiding high-level libraries like scikit-learn for the model logic[cite: 1].
